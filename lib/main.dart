@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:note_taking_ui/Screen/creataccount.dart';
 
 void main() {
   runApp(const MyApp());
@@ -57,12 +58,7 @@ class SplashScreen extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Text(
-                "NOTELY",
-                style: GoogleFonts.titanOne(
-                  fontSize: 20,
-                ),
-              ),
+              const AppName(),
               const SizedBox(
                 height: 130,
               ),
@@ -101,8 +97,15 @@ class SplashScreen extends StatelessWidget {
                           const SizedBox(
                             height: 45,
                           ),
-                          const GetBox(
+                          GetBox(
                             text: "Get Started",
+                            ontap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const CreateAccount()));
+                            },
                           ),
                           const NoteButton(
                             text: "Allready Have an account?",
@@ -114,6 +117,22 @@ class SplashScreen extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class AppName extends StatelessWidget {
+  const AppName({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      "NOTELY",
+      style: GoogleFonts.titanOne(
+        fontSize: 20,
       ),
     );
   }
@@ -141,14 +160,17 @@ class NoteButton extends StatelessWidget {
 }
 
 class GetBox extends StatelessWidget {
-  const GetBox({
+   const GetBox({
     required this.text,
+    required this.ontap,
     Key? key,
   }) : super(key: key);
   final String text;
+ final Function() ontap;
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: ontap,
       child: Container(
         height: 74,
         width: 319,
