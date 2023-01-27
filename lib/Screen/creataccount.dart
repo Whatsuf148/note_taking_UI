@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_taking_ui/Screen/Login.dart';
 import 'package:note_taking_ui/main.dart';
 
 class CreateAccount extends StatelessWidget {
@@ -65,7 +66,7 @@ class CreateAccount extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const SplashScreen()));
+                          builder: (context) => const LogInPage()));
                 }),
             const NoteButton(text: "Already have an account?"),
           ],
