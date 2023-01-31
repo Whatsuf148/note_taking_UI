@@ -59,7 +59,7 @@ class LogInPage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                             builder: (context) => const SplashScreen()));
-                  })
+                  }),
             ],
           ),
         ),

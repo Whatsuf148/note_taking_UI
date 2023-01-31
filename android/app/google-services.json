@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "608116343663",
+    "project_id": "notilfy",
+    "storage_bucket": "notilfy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608116343663:android:29d7daa8b3cbe1da5a1e9a",
+        "android_client_info": {
+          "package_name": "com.dhindocricket.notlify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608116343663-g5uc0pj4ook6ukpviim45puh9duhre5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCecclWM8U17W_XnAqWdU-jkgGvac67vgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608116343663-g5uc0pj4ook6ukpviim45puh9duhre5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
